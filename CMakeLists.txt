@@ -18,6 +18,10 @@ set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
+        tablemodel.h
+        tablemodel.cpp
+        subwindowview.h
+        subwindowview.cpp
         mainwindow.ui
 )
 
