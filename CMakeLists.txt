@@ -22,6 +22,8 @@ set(PROJECT_SOURCES
         tablemodel.cpp
         subwindowview.h
         subwindowview.cpp
+        combodelegate.h
+        combodelegate.cpp
         mainwindow.ui
 )
 

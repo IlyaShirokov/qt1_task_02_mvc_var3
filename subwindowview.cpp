@@ -3,11 +3,16 @@
 SubWindowView::SubWindowView(TableModel* model, QString fileName, QWidget* parent) : QTableView(parent), m_model(model), m_fileName(fileName)
 {
     updateWindowTitle();
+
+    m_delegate = new ComboDelegate(m_model);
+    setItemDelegateForColumn(3, m_delegate);
+
     setModel(m_model);
 }
 
 SubWindowView::~SubWindowView()
 {
+    delete m_delegate;
     emit aSubWindowClosed();
 }
 

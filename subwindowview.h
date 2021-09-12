@@ -5,6 +5,7 @@
 #include <QTableView>
 
 #include "tablemodel.h"
+#include "combodelegate.h"
 
 class SubWindowView : public QTableView
 {
@@ -22,6 +23,7 @@ public:
 
 private:
     TableModel*    m_model;
+    ComboDelegate* m_delegate;
     QString m_fileName;
 
 signals:
